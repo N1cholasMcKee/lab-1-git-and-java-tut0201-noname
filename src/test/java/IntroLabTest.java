@@ -30,4 +30,10 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+    @Test(timeout = 10)
+    public void testmckeenic() {
+        String expected = "Hey There! My name is Nicholas! I like dogs more than cats! Bruh";
+        String actual = IntroLab.mckeenic();
+        assertEquals(expected, actual);
+    }
 }
